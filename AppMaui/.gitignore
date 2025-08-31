@@ -1,0 +1,6 @@
+# Buil
+bin/
+obj/
+
+# Configuracion Local
+AppMaui.csproj.user

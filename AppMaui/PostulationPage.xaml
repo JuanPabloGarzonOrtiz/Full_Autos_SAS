@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppMaui.PostulationPage">
+    <VerticalStackLayout
+        Padding="20"
+        BackgroundColor="#292929">
+        <!--Header-->
+        <Grid ColumnDefinitions="Auto, *, Auto">
+            <ImageButton
+            Clicked="OnOpenMenuClicked"
+            Source="menu_desplegable.png"
+            Grid.Column="0"
+            WidthRequest="50"
+            HeightRequest="50"
+            Aspect="AspectFit"
+            Background="Transparent"/>
+
+            <ImageButton
+            Source="logo_white.png"
+            Grid.Column="2"
+            WidthRequest="70"
+            HeightRequest="70"
+            Background="Transparent"/>
+        </Grid>
+        <!--Nombre-->
+        <VerticalStackLayout
+            Margin="10">        
+            <Label 
+                Text="Nombre:"
+                TextColor="White"
+                FontSize="Title"
+                Margin="10"/>
+            <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                <Entry BackgroundColor="#e7b694" Placeholder="Name"/>
+            </Frame>
+        </VerticalStackLayout>
+        <!--Telefono-->
+        <VerticalStackLayout
+            Margin="10">        
+            <Label 
+                Text="Telefono:"
+                TextColor="White"
+                FontSize="Title"
+                Margin="10"/>
+            <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                <Entry BackgroundColor="#e7b694" Placeholder="***-***-**-**"/>
+            </Frame>
+        </VerticalStackLayout>
+        <!--Correo-->
+        <VerticalStackLayout
+            Margin="10">        
+            <Label 
+                Text="Correo:"
+                TextColor="White"
+                FontSize="Title"
+                Margin="10"/>
+            <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                <Entry BackgroundColor="#e7b694" Placeholder="*****@dominio.com"/>
+            </Frame>
+        </VerticalStackLayout>
+        <Frame BorderColor="Black" CornerRadius="1" Padding="3">
+            <Button 
+                Text="Hoja de Vida"
+                TextColor="White"
+                FontSize="Large"
+                BackgroundColor="#783710"/>
+        </Frame>
+
+        <Button 
+            Text="Postularse"
+            TextColor="White"
+            FontSize="Title"
+            Margin="10"
+            BackgroundColor="#7B3709"/>
+    </VerticalStackLayout>
+</ContentPage>

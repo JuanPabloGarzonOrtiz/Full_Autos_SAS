@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppMaui.LoginPage">
+    <VerticalStackLayout
+        Padding="20"
+        BackgroundColor="#292929">
+        <!--Header-->
+        <Grid ColumnDefinitions="Auto, *, Auto">
+            <ImageButton
+            Clicked="OnOpenMenuClicked"
+            Source="menu_desplegable.png"
+            Grid.Column="0"
+            WidthRequest="50"
+            HeightRequest="50"
+            Aspect="AspectFit"
+            Background="Transparent"/>
+
+            <ImageButton
+            Source="logo_white.png"
+            Grid.Column="2"
+            WidthRequest="70"
+            HeightRequest="70"
+            Background="Transparent"/>
+        </Grid>
+        <!--User-->
+        <VerticalStackLayout
+            Margin="10">        
+            <Label 
+                Text="User:"
+                TextColor="White"
+                FontSize="Title"
+                Margin="10"/>
+            <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                <Entry BackgroundColor="#e7b694" Placeholder="User"/>
+            </Frame>
+        </VerticalStackLayout>
+        <!--Contraseña-->
+        <VerticalStackLayout
+            Margin="10">        
+            <Label 
+                Text="Contraseña:"
+                TextColor="White"
+                FontSize="Title"
+                Margin="10"/>
+            <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                <Entry BackgroundColor="#e7b694" Placeholder="Secret"/>
+            </Frame>
+        </VerticalStackLayout>
+        <Button
+            Clicked="OnOpenPanelClicked"
+            Text="Iniciar Sesión"
+            TextColor="White"
+            FontSize="Title"
+            Margin="10"
+            BackgroundColor="#7B3709"/>
+    </VerticalStackLayout>
+</ContentPage>

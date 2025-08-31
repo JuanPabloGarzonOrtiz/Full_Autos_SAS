@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppMaui.PanelPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            BackgroundColor="#292929">
+            <!--Header-->
+            <Grid ColumnDefinitions="Auto, *, Auto">
+                <ImageButton
+                    Clicked="OnOpenMenuClicked"
+                    Source="menu_desplegable.png"
+                    Grid.Column="0"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Aspect="AspectFit"
+                    Background="Transparent"/>
+
+                <ImageButton
+                    Source="logo_white.png"
+                    Grid.Column="2"
+                    WidthRequest="70"
+                    HeightRequest="70"
+                    Background="Transparent"/>
+            </Grid>
+            <!--Trabajos de la Semama-->
+            <Label
+                Text="Trabajos de la Semana"
+                TextColor="White"
+                FontSize="Header"
+                HorizontalTextAlignment="Center"
+                Margin="10"/>
+            <Grid Padding="10" RowSpacing="5" ColumnSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Encabezados -->
+                <Border Stroke="#A5531C" Grid.Row="0" Grid.Column="0">
+                    <Label Text="Lunes" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="0" Grid.Column="1">
+                    <Label Text="Mastes" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="0" Grid.Column="2">
+                    <Label Text="Miercoles" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="0" Grid.Column="3">
+                    <Label Text="Jueves" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="0" Grid.Column="4">
+                    <Label Text="Viernes" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+
+                <!-- Datos -->
+                <Border Stroke="#A5531C" Grid.Row="1" Grid.Column="0">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="1" Grid.Column="1">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="1" Grid.Column="2">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="1" Grid.Column="3">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="1" Grid.Column="4">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+
+                <Border Stroke="#A5531C" Grid.Row="2" Grid.Column="0">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="2" Grid.Column="1">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="2" Grid.Column="2">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="2" Grid.Column="3">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="2" Grid.Column="4">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+
+                <Border Stroke="#A5531C" Grid.Row="3" Grid.Column="0">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="3" Grid.Column="1">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="3" Grid.Column="2">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="3" Grid.Column="3">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="3" Grid.Column="4">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+
+                <Border Stroke="#A5531C" Grid.Row="4" Grid.Column="0">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="4" Grid.Column="1">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="4" Grid.Column="2">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="4" Grid.Column="3">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="4" Grid.Column="4">
+                    <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+
+            </Grid>
+            <!--Trabajos del Mes-->
+            <Label
+                Text="Trabajos del Mes"
+                TextColor="White"
+                FontSize="Header"
+                HorizontalTextAlignment="Center"
+                Margin="10"/>
+            <Grid Padding="10" RowSpacing="5" ColumnSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Encabezados -->
+                <Border Stroke="#A5531C" Grid.Row="0" Grid.Column="0">
+                    <Label Text="Lunes" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="0" Grid.Column="1">
+                    <Label Text="Mastes" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="0" Grid.Column="2">
+                    <Label Text="Miercoles" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="0" Grid.Column="3">
+                    <Label Text="Jueves" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="0" Grid.Column="4">
+                    <Label Text="Viernes" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+
+                <!-- Datos -->
+                <Border Stroke="#A5531C" Grid.Row="1" Grid.Column="0">
+                    <Label Text="1" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="1" Grid.Column="1">
+                    <Label Text="2" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="1" Grid.Column="2">
+                    <Label Text="3" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="1" Grid.Column="3">
+                    <Label Text="4" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="1" Grid.Column="4">
+                    <Label Text="5" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+
+                <Border Stroke="#A5531C" Grid.Row="2" Grid.Column="0">
+                    <Label Text="8" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="2" Grid.Column="1">
+                    <Label Text="9" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="2" Grid.Column="2">
+                    <Label Text="10" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="2" Grid.Column="3">
+                    <Label Text="11" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="2" Grid.Column="4">
+                    <Label Text="12" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+
+                <Border Stroke="#A5531C" Grid.Row="3" Grid.Column="0">
+                    <Label Text="15" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="3" Grid.Column="1">
+                    <Label Text="16" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="3" Grid.Column="2">
+                    <Label Text="17" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="3" Grid.Column="3">
+                    <Label Text="18" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="3" Grid.Column="4">
+                    <Label Text="19" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+
+                <Border Stroke="#A5531C" Grid.Row="4" Grid.Column="0">
+                    <Label Text="22" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="4" Grid.Column="1">
+                    <Label Text="23" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="4" Grid.Column="2">
+                    <Label Text="24" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="4" Grid.Column="3">
+                    <Label Text="25" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+                <Border Stroke="#A5531C" Grid.Row="4" Grid.Column="4">
+                    <Label Text="26" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Border>
+            </Grid>
+            <!--Manuales-->
+            <Label 
+                Text="Manuales de Procedimientos"
+                TextColor="White"
+                FontSize="Title"
+                Margin="10"/>
+            <HorizontalStackLayout>
+                <ImageButton 
+                    Source="pdf.png"
+                    Grid.Column="2"
+                    WidthRequest="10"
+                    HeightRequest="10"
+                    Background="Transparent"/>
+                <Label 
+                    Text="Manual de Diagnostico"
+                    TextColor="#A5531C"
+                    FontSize="Subtitle"
+                    Margin="5"
+                    VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <ImageButton 
+                    Source="pdf.png"
+                    Grid.Column="2"
+                    WidthRequest="10"
+                    HeightRequest="10"
+                    Background="Transparent"/>
+                <Label 
+                    Text="Manual de Diagnostico"
+                    TextColor="#A5531C"
+                    FontSize="Subtitle"
+                    Margin="5"
+                    VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <ImageButton 
+                    Source="pdf.png"
+                    Grid.Column="2"
+                    WidthRequest="10"
+                    HeightRequest="10"
+                    Background="Transparent"/>
+                <Label 
+                    Text="Manual de Diagnostico"
+                    TextColor="#A5531C"
+                    FontSize="Subtitle"
+                    Margin="5"
+                    VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <ImageButton 
+                    Source="pdf.png"
+                    Grid.Column="2"
+                    WidthRequest="10"
+                    HeightRequest="10"
+                    Background="Transparent"/>
+                <Label 
+                    Text="Manual de Diagnostico"
+                    TextColor="#A5531C"
+                    FontSize="Subtitle"
+                    Margin="5"
+                    VerticalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

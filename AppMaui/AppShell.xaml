@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AppMaui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppMaui"
+    FlyoutBackgroundColor="#292929"
+    Title="AppMaui">
+
+    
+    <!--Plantilla-->
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid  
+                ColumnDefinitions="Auto, *, Auto"
+                Padding="5">
+                <ImageButton
+                    Source="{Binding Icon}"
+                    Grid.Column="0"
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    Aspect="AspectFit"
+                    Background="Transparent"/>
+                <Label
+                    Text="{Binding Title}"
+                    Grid.Column="1" 
+                    TextColor="White"
+                    Margin="10"
+                    FontSize="30"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <!--Logo Principal-->
+    <Shell.FlyoutHeader>
+        <Grid  Padding="10">
+            <Image Source="logo_white.png" HeightRequest="200"/>
+        </Grid>
+    </Shell.FlyoutHeader>
+    <!--Opciones de Navegacion-->
+    <FlyoutItem Title="Inicio" Icon="home.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Servicios" Icon="servicios.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Ubicaciones" Icon="ubicaciones.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Hoja de Vida" Icon="hv.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Trayectoría" Icon="trayectoria.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Cuenta" Icon="cuenta.png">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" Route="LoginPage"/>
+    </FlyoutItem>
+
+    <!--Rutas Externas al Shell-->
+    <ShellContent Route="ServicePage" ContentTemplate="{DataTemplate local:ServicePage}" />
+    <ShellContent Route="ListTecPage" ContentTemplate="{DataTemplate local:ListTecPage}" />
+    <ShellContent Route="PostulationPage" ContentTemplate="{DataTemplate local:PostulationPage}" />
+    <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+    <ShellContent Route="PanelPage" ContentTemplate="{DataTemplate local:PanelPage}" />
+</Shell>

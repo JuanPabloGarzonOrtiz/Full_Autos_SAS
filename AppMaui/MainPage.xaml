@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppMaui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            BackgroundColor="#292929">
+            <!--Secciontion Welcome-->
+            <Grid>
+                <!--Backgroud Welcome-->
+                <Image 
+                    Source="img_back_index.png"
+                    Aspect="AspectFill"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"/>
+                <BoxView
+                    Color="#90000000"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"/>
+
+                <VerticalStackLayout
+                    Padding="20"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill">
+                    <!--Header-->
+                    <Grid ColumnDefinitions="Auto, *, Auto">
+                        <ImageButton
+                            Clicked="OnOpenMenuClicked"
+                            Source="menu_desplegable.png"
+                            Grid.Column="0"
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            Aspect="AspectFit"
+                            Background="Transparent"/>
+
+                        <ImageButton
+                            Source="logo_white.png"
+                            Grid.Column="2"
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            Background="Transparent"/>
+                    </Grid>
+                    <Label
+                        Text="Nos Encargamos de tu auto, tu disfruta el camino"
+                        TextColor="White"
+                        FontSize="Header"
+                        HorizontalTextAlignment="Center"/>
+                    <Button
+                        Text="Agenda Tu Cita"
+                        TextColor="White"
+                        FontSize="Large"
+                        BackgroundColor="#7B3709"/>
+                </VerticalStackLayout>
+            </Grid>
+            <VerticalStackLayout
+                Padding="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill">
+                <!--Secction Servicios-->
+                <Label
+                    Text="Servicios"
+                    FontSize="Title"
+                    TextColor="#7B3709"
+                    HorizontalTextAlignment="Center"/>
+                <!--Seccion-->
+                <Label
+                    Text="Mantenimiento Mecanico"
+                    FontSize="Subtitle"
+                    TextColor="#E7B694"
+                    HorizontalTextAlignment="Start"/>
+                <ScrollView Orientation="Horizontal">
+                    <HorizontalStackLayout
+                        Spacing="20"
+                        Margin="10">
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </ScrollView>
+                <!--Seccion-->
+                <Label
+                    Text="Mantenimiento Preventivo"
+                    FontSize="Subtitle"
+                    TextColor="#E7B694"
+                    HorizontalTextAlignment="End"/>
+                <ScrollView Orientation="Horizontal">
+                    <HorizontalStackLayout
+                        Spacing="20"
+                        Margin="10">
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <ImageButton
+                                Clicked="OnOpenServiceClicked"
+                                Source="product_defect.png"
+                                Aspect="Fill"
+                                Background="Transparent"/>
+                            <Label
+                                Text="Cambio de Aceite"
+                                FontSize="Small"
+                                TextColor="White"
+                                HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </ScrollView>
+            </VerticalStackLayout>
+            <!--Seccion de Ubicaciones-->
+            <VerticalStackLayout
+                Padding="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                BackgroundColor="#7B3709">
+                <Label 
+                    Text="Ubicaciones"
+                    FontSize="Title"
+                    TextColor="#292929"
+                    Margin="10"
+                    HorizontalTextAlignment="Center"/>
+                <WebView 
+                    x:Name="MyWebView"
+                    HeightRequest="500"
+                    Margin="10"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"/>
+            </VerticalStackLayout>
+            <!--Section de Postulación-->
+            <Grid>
+                <Image 
+                    Source="img_back_postulation.png"
+                    Aspect="AspectFill"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"/>
+                <BoxView
+                    Color="#90000000"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"/>
+                <VerticalStackLayout
+                    Padding="20"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill">
+                    <Label 
+                        Text="¿Te gustaría ser parte de nuestra serviteca?"
+                        TextColor="White"
+                        FontSize="Header"
+                        HorizontalTextAlignment="Center"/>
+                    <Button 
+                        Clicked="OnOpenFormClicked"
+                        Text="Postulate"
+                        TextColor="White"
+                        FontSize="Large"
+                        BackgroundColor="#7B3709"/>
+                </VerticalStackLayout>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
