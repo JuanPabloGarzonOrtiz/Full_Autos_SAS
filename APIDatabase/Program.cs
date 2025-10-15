@@ -16,7 +16,8 @@ namespace APIDatabase{
         public string Materiales { get; set; } = "";
         public string Precio { get; set; } = "";
         public string Cargo { get; set; } = "";
-
+        public string Fecha { get; set; } = "";
+        public string Año { get; set; } = "";
     }
 
     public class DbConection{
@@ -48,6 +49,7 @@ namespace APIDatabase{
                     }else if (secction == "list_Services"){
                         resultados.Add(new Registro{
                             Nombre = reader["nombre"].ToString(),
+                            Foto = reader["foto"].ToString(),
                             Tipo = reader["tipo"].ToString(),
                         });
                     }else if (secction == "list_Tec"){
@@ -55,6 +57,12 @@ namespace APIDatabase{
                             Nombre = reader["nombre"].ToString(),
                             Cargo = reader["cargo"].ToString(),
                             Foto = reader["foto"].ToString()
+                        });
+                    }else if (secction == "list_Trayectoria"){
+                        resultados.Add(new Registro{
+                            Fecha = reader["fecha"].ToString(),
+                            Año = reader["año"].ToString(),
+                            Descripcion = reader["descripcion"].ToString()
                         });
                     }
                 }
@@ -65,7 +73,7 @@ namespace APIDatabase{
         }
 
         public static async Task Main(string[] args){
-            var json = await Query("SELECT nombre, cargo, foto FROM Empleados;", "list_Tec");
+            var json = await Query("select * from Servicios", "list_Services");
             var consulta = JsonSerializer.Deserialize<List<Dictionary<string, string>>>(json);
 
             foreach (var item in consulta){

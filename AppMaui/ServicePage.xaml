@@ -40,13 +40,13 @@
                                 HeightRequest="70"
                                 Background="Transparent"/>
                         </Grid>
-                        <Label 
-                            Text="Cambio de Aceite"
+                        <Label
+                            x:Name="Name_Service"
                             TextColor="White"
                             FontSize="Header"
                             HorizontalTextAlignment="End"/>
                         <Label 
-                            Text="Cambio de Aceite"
+                            x:Name="Precio_Service"
                             TextColor="White"
                             FontSize="Header"/>
                     </VerticalStackLayout>
@@ -64,8 +64,8 @@
                             Text="Tiempo"
                             TextColor="#7B3709"
                             FontSize="Title"/>
-                        <Label 
-                            Text="20 Min"
+                        <Label
+                            x:Name="Time_Service"
                             TextColor="White"
                             FontSize="Title"/>
                     </VerticalStackLayout>
@@ -96,8 +96,8 @@
                             Text="Materiales"
                             TextColor="#7B3709"
                             FontSize="Title"/>
-                        <Label 
-                            Text="Aceite Movil 1"
+                        <Label
+                            x:Name="Materiales_Service"
                             TextColor="White"
                             FontSize="Title"/>
                     </VerticalStackLayout>
